@@ -130,11 +130,11 @@ class TunnelServer:
             web_socket_thread.start()
             logger.info('Both debugger and websocket threads started...')
             logger.info('Successfully connected to local server..')
-            debugger_thread.join()
-            web_socket_thread.join()
-            self.cleanup()
-            logger.info('Both debugger and websocket threads stopped...')
-            logger.info('Stopped local server..')
+            #debugger_thread.join()
+            #web_socket_thread.join()
+            #self.cleanup()
+            #logger.info('Both debugger and websocket threads stopped...')
+            #logger.info('Stopped local server..')
 
     def _listen_to_web_socket(self, client, ws_socket, index):
         try:
